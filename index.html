@@ -61,7 +61,9 @@
     .intro { font-size: clamp(20px, 2.1vw, 28px); font-weight: 300; line-height: 1.35; color: var(--fg); max-width: 34ch; margin-top: clamp(28px, 4vw, 48px); }
     .text { font-size: 17px; line-height: 1.55; color: var(--muted); max-width: 58ch; }
     .note { font-size: 14px; line-height: 1.5; color: var(--dim); margin-top: 32px; max-width: 70ch; }
-    .big { font-size: clamp(44px, 6vw, 80px); font-weight: 500; letter-spacing: -.03em; line-height: .95; font-variant-numeric: tabular-nums; }
+    .big { font-size: clamp(44px, 6vw, 80px); font-weight: 500; letter-spacing: -.03em; line-height: .95; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .big small { font-size: .45em; letter-spacing: -.01em; margin-left: .12em; }
+    .cell .big { font-size: clamp(44px, 5.2vw, 72px); }
     .cap { font-size: 13px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 
     /* ── Grids & rows ── */
@@ -222,8 +224,8 @@
 
     <div class="grid g3">
       <div class="cell" data-r><div class="big">+50%</div><p class="text">dos acessos de banda larga fixa no Brasil estão com provedores regionais (Anatel). O cliente já confia no provedor da cidade.</p></div>
-      <div class="cell" data-r="2"><div class="big">&lt; 5 min</div><p class="text">é o tempo de resposta no WhatsApp que segura a venda. O anúncio abre a conversa; quem responde primeiro costuma levar a instalação.</p></div>
-      <div class="cell" data-r="3"><div class="big">24+ meses</div><p class="text">de vida do assinante com churn saudável. O custo de aquisição se paga rápido e a receita se acumula.</p></div>
+      <div class="cell" data-r="2"><div class="big">&lt; 5<small>min</small></div><p class="text">é o tempo de resposta no WhatsApp que segura a venda. O anúncio abre a conversa; quem responde primeiro costuma levar a instalação.</p></div>
+      <div class="cell" data-r="3"><div class="big">24+<small>meses</small></div><p class="text">de vida do assinante com churn saudável. O custo de aquisição se paga rápido e a receita se acumula.</p></div>
     </div>
   </div>
 </section>
@@ -287,7 +289,7 @@
 
     <div class="grid g3">
       <div class="cell" data-r><div class="big">≈ 308</div><p class="text">assinantes novos ativos no 6º mês</p></div>
-      <div class="cell" data-r="2"><div class="big" style="color: var(--accent-2);">R$ 30,8 mil</div><p class="text">por mês em receita recorrente nova</p></div>
+      <div class="cell" data-r="2"><div class="big" style="color: var(--accent-2);">R$ 30,8<small>mil</small></div><p class="text">por mês em receita recorrente nova</p></div>
       <div class="cell" data-r="3"><div class="big">1,75×</div><p class="text">de resultado com +15% em 4 etapas do funil</p></div>
     </div>
     <p class="note">Projeção ilustrativa: 54 instalações por mês, churn de 2% ao mês e ticket de R$ 99,90. Não é garantia de resultado; é a conta que vamos perseguir e medir mês a mês.</p>
