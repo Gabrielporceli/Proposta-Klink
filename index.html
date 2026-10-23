@@ -8,7 +8,16 @@
   <title>Proposta Klink Fibra · Porceli Company</title>
   <meta name="description" content="Proposta de tráfego pago da Porceli Company para a Klink Fibra." />
   <meta property="og:title" content="Proposta de Crescimento · Klink Fibra" />
-  <meta property="og:description" content="Meta Ads, Google Ads, criativos e rastreamento de ponta a ponta para a Klink Fibra." />
+  <meta property="og:description" content="Meta: ≈ 300 novos assinantes em 6 meses com Meta Ads, Google Ads, criativos e rastreamento." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Porceli Company" />
+  <!-- WhatsApp exige URL absoluta: trocar pelo domínio final da Vercel -->
+  <meta property="og:image" content="og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Proposta Porceli Company para a Klink Fibra" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="assets/logo-porceli-white.png" />
   <style>
     @font-face { font-family: 'Founders Grotesk'; src: url('assets/fonts/FoundersGrotesk-Light.otf') format('opentype'); font-weight: 300; font-display: swap; }
@@ -141,7 +150,19 @@
     .price { margin-top: 40px; display: flex; align-items: baseline; gap: 8px; }
     .price .big { font-size: clamp(56px, 6.4vw, 88px); }
     .price span { color: var(--muted); font-size: 16px; }
-    .plan .extra { margin-top: 12px; font-size: 15px; line-height: 1.45; color: var(--fg); border-left: 2px solid var(--accent-2); padding-left: 14px; }
+    .plan .entry { margin-top: 12px; font-size: 15px; line-height: 1.45; color: var(--muted); }
+    .plan .entry b { color: var(--fg); font-weight: 500; }
+    .budget { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; margin-top: 24px; padding: 18px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .budget b { display: block; font-size: 22px; font-weight: 500; margin-top: 6px; letter-spacing: -.01em; }
+    .budget small { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+    /* ── Ancoragem ── */
+    .anchor { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: clamp(32px, 4vw, 56px); margin-top: clamp(56px, 7vw, 96px); }
+    .vs { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-bottom: 16px; }
+    .vs .big { font-size: clamp(36px, 3.6vw, 52px); }
+    .vs .cap { font-size: 12px; }
+    .big.dim { color: var(--dim); }
+    .anchor .cell:first-child .vs .big:first-child, .anchor .cell:nth-child(2) .vs .big:first-child { color: var(--accent-2); }
     .plan ul { list-style: none; margin: 36px 0 0; padding: 0; flex: 1; }
     .plan li { padding: 14px 0; border-top: 1px solid var(--line); font-size: 16px; line-height: 1.4; display: flex; justify-content: space-between; gap: 16px; }
     .plan li b { font-weight: 500; }
@@ -172,7 +193,8 @@
     @media (max-width: 960px) {
       .g4 { grid-template-columns: repeat(2, minmax(0,1fr)); }
       .g3 { grid-template-columns: 1fr; }
-      .plans { grid-template-columns: 1fr; }
+      .plans { grid-template-columns: minmax(0, 1fr); }
+      .anchor { grid-template-columns: minmax(0, 1fr); }
       .assume { grid-template-columns: repeat(2, minmax(0,1fr)); }
       .row { grid-template-columns: 48px minmax(0,1fr); }
       .row .text { grid-column: 2; }
@@ -187,6 +209,9 @@
       th:nth-child(3), td.m { display: none; }
       td.v { font-size: 18px; }
       .plan li { flex-direction: column; gap: 4px; }
+      .plan { padding: 24px 20px; }
+      .price .big { font-size: 52px; }
+      .budget { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -201,15 +226,29 @@
     </div>
 
     <div class="hero-body">
-      <span class="cap" data-r>Proposta de crescimento para a Klink Fibra</span>
-      <h1 data-r="2">Mais assinantes de <em>fibra</em> para a Klink.</h1>
-      <p class="intro" data-r="3">Tráfego pago é a ferramenta. O que vamos medir é instalação feita, assinante ativo e receita recorrente.</p>
+      <span class="cap">Proposta de crescimento para a Klink Fibra</span>
+      <h1>Meta: ≈ 300 novos assinantes de <em>fibra</em> em 6 meses.</h1>
+      <p class="intro">Tráfego pago é a ferramenta. O que vamos medir é instalação feita, assinante ativo e receita recorrente.</p>
+      <p class="note" style="margin-top: 16px;">Projeção com R$ 3.000/mês de mídia na Meta. Premissas na seção 03.</p>
 
-      <div class="hero-meta" data-r="4">
+      <div class="hero-meta">
         <div><span class="cap">Preparada para</span><div>Klink Fibra · Minas Gerais</div></div>
         <div><span class="cap">Por</span><div>Porceli Company</div></div>
         <div><span class="cap">Validade</span><div>30 dias a partir do envio</div></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESUMO -->
+<section id="resumo">
+  <div class="wrap">
+    <div class="label"><span>00</span><span>Resumo em 30 segundos</span></div>
+    <div class="grid g4" style="margin-top: 0;">
+      <div class="cell" data-r><span class="cap">O que fazemos</span><h3 style="margin-top: 12px;">Tráfego, criativos e rastreamento</h3><p class="text">Anúncios na Meta (e no Google, no Advantage), criativos dos anúncios e rastreamento de cada instalação.</p></div>
+      <div class="cell" data-r="2"><span class="cap">Meta em 6 meses</span><h3 style="margin-top: 12px;">≈ 300 assinantes novos</h3><p class="text">≈ R$ 30,8 mil por mês em receita recorrente nova no 6º mês. É uma projeção, não uma garantia.</p></div>
+      <div class="cell" data-r="3"><span class="cap">Investimento</span><h3 style="margin-top: 12px;">A partir de R$ 2.500/mês</h3><p class="text">Starter R$ 2.500 ou Advantage R$ 3.500, mais a verba de mídia paga direto às plataformas.</p></div>
+      <div class="cell" data-r="4"><span class="cap">Prazo</span><h3 style="margin-top: 12px;">No ar em 2 semanas</h3><p class="text">Fidelidade de 6 meses. <a href="#planos">Ver planos e valores ↓</a></p></div>
     </div>
   </div>
 </section>
@@ -225,7 +264,7 @@
     <div class="grid g3">
       <div class="cell" data-r><div class="big">+50%</div><p class="text">dos acessos de banda larga fixa no Brasil estão com provedores regionais (Anatel). O cliente já confia no provedor da cidade.</p></div>
       <div class="cell" data-r="2"><div class="big">&lt; 5<small>min</small></div><p class="text">é o tempo de resposta no WhatsApp que segura a venda. O anúncio abre a conversa; quem responde primeiro costuma levar a instalação.</p></div>
-      <div class="cell" data-r="3"><div class="big">24+<small>meses</small></div><p class="text">de vida do assinante com churn saudável. O custo de aquisição se paga rápido e a receita se acumula.</p></div>
+      <div class="cell" data-r="3"><div class="big">R$ 2.400</div><p class="text">é o que um assinante de R$ 99,90 paga se ficar 24 meses. Cada instalação vira receita recorrente, não venda única.</p></div>
     </div>
   </div>
 </section>
@@ -301,6 +340,7 @@
   <div class="wrap">
     <div class="label" data-r><span>05</span><span>Onde o provedor perde venda</span></div>
     <h2 data-r="2">Três vazamentos. Três <em>alavancas</em>.</h2>
+    <p class="intro" data-r="3">Cada mês sem campanha estruturada são cerca de 54 instalações, ou R$ 5,4 mil por mês de receita recorrente, que ficam com o concorrente. Em 6 meses, são ≈ R$ 30,8 mil por mês que a Klink deixa de faturar.</p>
 
     <div class="rows">
       <div class="row" data-r><span class="idx">01</span><h3>Conversa de quem está fora da cobertura</h3><p class="text">Anúncio aberto para a cidade inteira gera conversa de quem a fibra não alcança. Resolvemos com segmentação por raio e bairro e com anúncios que citam os bairros atendidos.</p></div>
@@ -408,15 +448,35 @@
 <section id="planos">
   <div class="wrap">
     <div class="label" data-r><span>11</span><span>Planos e investimento</span></div>
-    <h2 data-r="2">Dois planos. Uma meta: <em>assinantes</em>.</h2>
-    <p class="intro" data-r="3">O Starter domina a Meta. O Advantage soma o Google para capturar quem já está procurando internet.</p>
+    <h2 data-r="2">Primeiro o valor. Depois o <em>preço</em>.</h2>
+
+    <div class="anchor">
+      <div class="cell" data-r>
+        <div class="vs"><span class="big">R$ 2.400</span><span class="cap">contra</span><span class="big dim">R$ 56</span></div>
+        <p class="text">Um assinante paga cerca de R$ 2.400 em 24 meses. A mídia para trazê-lo custa cerca de R$ 56.</p>
+      </div>
+      <div class="cell" data-r="2">
+        <div class="vs"><span class="big">R$ 30,8<small>mil</small></span><span class="cap">contra</span><span class="big dim">R$ 3.500</span></div>
+        <p class="text">A meta do 6º mês é R$ 30,8 mil por mês em receita nova. O Advantage custa R$ 3.500 por mês.</p>
+      </div>
+      <div class="cell" data-r="3">
+        <div class="vs"><span class="big">+ R$ 12<small>mil/mês</small></span></div>
+        <p class="text">é o custo estimado de montar um time interno com gestor de tráfego, designer e editor de vídeo, com encargos. Aqui o time já vem pronto.</p>
+      </div>
+    </div>
+
+    <p class="intro" data-r style="margin-top: clamp(64px, 8vw, 112px);">Dois planos, uma meta: assinantes. O Starter domina a Meta. O Advantage soma o Google para capturar quem já está procurando internet.</p>
 
     <div class="plans">
       <div class="plan" data-r>
         <div class="plan-head"><div class="plan-name">Starter</div></div>
         <p class="sub">Tráfego pago na Meta · Facebook e Instagram</p>
         <div class="price"><span>R$</span><div class="big">2.500</div><span>/mês</span></div>
-        <p class="extra">+ R$ 500 (valor único) de setup para organizar os acessos e auditar as contas.</p>
+        <p class="entry">Entrada <b>R$ 3.000</b>, depois <b>R$ 2.500</b> por mês. A entrada inclui o setup das contas (R$ 500).</p>
+        <div class="budget">
+          <div><span class="cap">Verba sugerida de mídia</span><b>R$ 3.000/mês</b><small>na Meta</small></div>
+          <div><span class="cap">Investimento total no mês</span><b>≈ R$ 5.500</b><small>serviço + mídia</small></div>
+        </div>
         <ul>
           <li>Gestão completa dos anúncios na Meta Ads</li>
           <li><b>Criativos dos anúncios pela Porceli Company</b><i>Incluso</i></li>
@@ -425,14 +485,18 @@
           <li>Segmentação pelos bairros com cobertura</li>
           <li>Dashboard, report semanal e call mensal</li>
         </ul>
-        <div class="foot"><span>1º mês <b>R$ 3.000</b>, depois <b>R$ 2.500</b></span><span>Fidelidade <b>6 meses</b></span></div>
+        <div class="foot"><span>Fidelidade <b>6 meses</b></span><span>Mídia paga direto à Meta</span></div>
       </div>
 
       <div class="plan rec" data-r="2">
         <div class="plan-head"><div class="plan-name">Advantage</div><span class="pill">Recomendado</span></div>
         <p class="sub">Meta Ads + Google Ads + landing page</p>
         <div class="price"><span>R$</span><div class="big">3.500</div><span>/mês</span></div>
-        <p class="extra">+ R$ 500 (valor único) de setup dos acessos e auditoria das contas.<br/>+ R$ 1.000 (valor único) para desenvolver a landing page, necessária para as campanhas do Google.</p>
+        <p class="entry">Entrada <b>R$ 5.000</b>, depois <b>R$ 3.500</b> por mês. A entrada inclui o setup (R$ 500) e a landing page (R$ 1.000), necessária para o Google.</p>
+        <div class="budget">
+          <div><span class="cap">Verba sugerida de mídia</span><b>R$ 4.500/mês</b><small>R$ 3.000 Meta + R$ 1.500 Google</small></div>
+          <div><span class="cap">Investimento total no mês</span><b>≈ R$ 8.000</b><small>serviço + mídia</small></div>
+        </div>
         <ul>
           <li class="muted">Tudo do Starter, mais:</li>
           <li><b>Gestão completa do Google Ads</b><i>Novo</i></li>
@@ -442,16 +506,10 @@
           <li>Rastreamento integrado Meta, Google e GA4</li>
           <li>Verba distribuída para o canal que rende mais</li>
         </ul>
-        <div class="foot"><span>1º mês <b>R$ 5.000</b>, depois <b>R$ 3.500</b></span><span>Fidelidade <b>6 meses</b></span></div>
+        <div class="foot"><span>Fidelidade <b>6 meses</b></span><span>Mídia paga direto à Meta e ao Google</span></div>
       </div>
     </div>
-
-    <div class="grid g4">
-      <div class="cell" data-r><span class="cap">Setup</span><h3 style="margin-top: 12px;">R$ 500</h3><p class="text">Valor único e obrigatório nos dois planos: acessos e auditoria das contas.</p></div>
-      <div class="cell" data-r="2"><span class="cap">Landing page</span><h3 style="margin-top: 12px;">R$ 1.000</h3><p class="text">Valor único no Advantage. A página fica com a Klink.</p></div>
-      <div class="cell" data-r="3"><span class="cap">Fidelidade</span><h3 style="margin-top: 12px;">6 meses</h3><p class="text">Tempo para aprender, otimizar e escalar.</p></div>
-      <div class="cell" data-r="4"><span class="cap">Mídia</span><h3 style="margin-top: 12px;">À parte</h3><p class="text">Paga pela Klink direto às plataformas.</p></div>
-    </div>
+    <p class="note">A verba sugerida é um ponto de partida e pode ser ajustada. A landing page fica com a Klink. O custo de um time interno é uma estimativa de salários de mercado com encargos.</p>
   </div>
 </section>
 
