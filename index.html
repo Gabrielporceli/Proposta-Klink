@@ -165,6 +165,12 @@
     .budget b { display: block; font-size: 22px; font-weight: 500; margin-top: 6px; letter-spacing: -.01em; }
     .budget small { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; }
 
+    /* ── Por que o Advantage ── */
+    .why { margin-top: clamp(96px, 12vw, 160px); padding-top: clamp(48px, 6vw, 72px); border-top: 1px solid var(--accent); }
+    .statement.small { font-size: clamp(34px, 5.4vw, 72px); max-width: 15em; }
+    .why td.v { font-size: 20px; }
+    .why td.hl { color: var(--accent-2); }
+
     /* ── Ancoragem ── */
     .anchor { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: clamp(32px, 4vw, 56px); margin-top: clamp(56px, 7vw, 96px); }
     .vs { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-bottom: 16px; }
@@ -218,6 +224,9 @@
       .grp:not(:last-child) .bar b { display: none; }
       .bar b { font-size: 12px; }
       .legend .cap { margin-left: 0; }
+      .why th:nth-child(3) { display: table-cell; }
+      .why th, .why td { padding-right: 8px; font-size: 13px; }
+      .why td.v { font-size: 14px; white-space: normal; }
       .bars-x .cap { font-size: 11px; }
       th:nth-child(3), td.m { display: none; }
       td.v { font-size: 18px; }
@@ -538,6 +547,38 @@
       </div>
     </div>
     <p class="note">A verba sugerida é um ponto de partida e pode ser ajustada. A landing page fica com a Klink. O custo de um time interno é uma estimativa de salários de mercado com encargos.</p>
+
+    <!-- Por que o Advantage -->
+    <div class="why">
+      <div class="label" data-r style="margin-bottom: 24px;"><span>+</span><span>Por que o Advantage</span></div>
+      <p class="statement small" data-r="2">+ 37% de instalações com o <em>mesmo custo</em> por assinante.</p>
+      <p class="intro" data-r="3">O Advantage não é mais barato por instalação. Ele é o jeito de crescer mais sem piorar a eficiência.</p>
+
+      <table data-r>
+        <thead><tr><th></th><th>Starter</th><th>Advantage</th><th>Diferença</th></tr></thead>
+        <tbody>
+          <tr><td>Serviço + mídia por mês</td><td class="v">R$ 5.500</td><td class="v">R$ 8.000</td><td class="v hl">+ R$ 2.500</td></tr>
+          <tr><td>Instalações por mês</td><td class="v">54</td><td class="v">74</td><td class="v hl">+ 20 (+37%)</td></tr>
+          <tr><td>Custo por instalação</td><td class="v">≈ R$ 102</td><td class="v">≈ R$ 108</td><td class="v">quase igual</td></tr>
+          <tr><td>Assinantes no 6º mês</td><td class="v">≈ 308</td><td class="v">≈ 422</td><td class="v hl">+ 114</td></tr>
+        </tbody>
+      </table>
+
+      <div class="grid g3">
+        <div class="cell" data-r><div class="big">R$ 125</div><p class="text">é o custo de cada assinante a mais (R$ 2.500 ÷ 20). Ele paga R$ 99,90 por mês e se paga em pouco mais de uma mensalidade.</p></div>
+        <div class="cell" data-r="2"><div class="big" style="color: var(--accent-2);">2,5×</div><p class="text">de retorno em 6 meses: ≈ R$ 40 mil em mensalidades dos assinantes extras, contra R$ 16 mil a mais de custo (6 × R$ 2.500 + R$ 1.000 da landing page).</p></div>
+        <div class="cell" data-r="3"><div class="big">R$ 11,4<small>mil/mês</small></div><p class="text">continuam entrando depois do 6º mês com os 114 assinantes a mais, sem novo custo para trazê-los.</p></div>
+      </div>
+
+      <h3 data-r style="margin-top: clamp(64px, 8vw, 104px);">E por que não colocar esses R$ 2.500 a mais na própria Meta?</h3>
+      <div class="rows">
+        <div class="row" data-r><span class="idx">01</span><h3>A Meta satura numa área pequena</h3><p class="text">A Klink só vende nos bairros com fibra, então o público é limitado. Dobrar a verba faz as mesmas pessoas verem o anúncio mais vezes: o custo sobe e o retorno por real cai. O Google traz gente que a Meta não alcança.</p></div>
+        <div class="row" data-r><span class="idx">02</span><h3>No Google o cliente chega pronto</h3><p class="text">Quem busca "internet fibra em [cidade]" já decidiu contratar e está escolhendo de quem. É quem está de mudança ou insatisfeito com a operadora. Se a Klink não aparece, o concorrente aparece.</p></div>
+        <div class="row" data-r><span class="idx">03</span><h3>Defesa da marca Klink</h3><p class="text">Hoje, quem busca "Klink" no Google pode ver o anúncio de um concorrente antes do seu nome.</p></div>
+        <div class="row" data-r><span class="idx">04</span><h3>A Klink ganha um site</h3><p class="text">A landing page fica com a Klink: passa credibilidade para quem pesquisa antes de contratar e dá à Meta um lugar para medir as visitas.</p></div>
+      </div>
+      <p class="note">Prefere começar menor? Dá para iniciar no Starter e migrar para o Advantage a partir do 3º mês, com a Meta já otimizada.</p>
+    </div>
   </div>
 </section>
 
