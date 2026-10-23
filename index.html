@@ -1,0 +1,874 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Proposta Klink Fibra · Porceli Company</title>
+  <meta name="description" content="Proposta de tráfego pago da Porceli Company para a Klink Fibra." />
+  <meta property="og:title" content="Proposta de Crescimento · Klink Fibra" />
+  <meta property="og:description" content="Mais assinantes de fibra com Meta Ads, Google Ads, criativos e rastreamento de ponta a ponta." />
+  <link rel="icon" href="assets/logo-porceli-black.png" />
+  <style>
+    /* ───────── Fonts ───────── */
+    @font-face { font-family: 'Founders Grotesk'; src: url('assets/fonts/FoundersGrotesk-Light.otf') format('opentype'); font-weight: 300; font-display: swap; }
+    @font-face { font-family: 'Founders Grotesk'; src: url('assets/fonts/FoundersGrotesk-Regular.otf') format('opentype'); font-weight: 400; font-display: swap; }
+    @font-face { font-family: 'Founders Grotesk'; src: url('assets/fonts/FoundersGrotesk-RegularItalic.otf') format('opentype'); font-weight: 400; font-style: italic; font-display: swap; }
+    @font-face { font-family: 'Founders Grotesk'; src: url('assets/fonts/FoundersGrotesk-Medium.otf') format('opentype'); font-weight: 500; font-display: swap; }
+    @font-face { font-family: 'Founders Grotesk'; src: url('assets/fonts/FoundersGrotesk-Semibold.otf') format('opentype'); font-weight: 600; font-display: swap; }
+    @font-face { font-family: 'Founders Grotesk'; src: url('assets/fonts/FoundersGrotesk-Bold.otf') format('opentype'); font-weight: 700; font-display: swap; }
+    @font-face { font-family: 'Founders Grotesk XCond'; src: url('assets/fonts/FoundersGroteskXCond-Lt.otf') format('opentype'); font-weight: 300; font-display: swap; }
+    @font-face { font-family: 'Founders Grotesk XCond'; src: url('assets/fonts/FoundersGroteskXCond-Bold.otf') format('opentype'); font-weight: 700; font-display: swap; }
+
+    /* ───────── Tokens ───────── */
+    :root {
+      --purple: #6829C0;
+      --purple-light: #8A55D8;
+      --cyan: #8CCFEA;
+      --offwhite: #F4F4F4;
+      --black: #000;
+      --fg: #000;
+      --muted: rgba(0,0,0,0.52);
+      --line: rgba(0,0,0,0.12);
+      --line-strong: rgba(0,0,0,0.82);
+      --bad: #C0392B;
+      --warn: #D97706;
+      --sans: 'Founders Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      --xcond: 'Founders Grotesk XCond', 'Founders Grotesk', 'Arial Narrow', sans-serif;
+      --gutter: clamp(16px, 5vw, 96px);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--sans);
+      color: var(--fg);
+      background: var(--offwhite);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+
+    /* ───────── Section base ───────── */
+    .sec { position: relative; padding: clamp(80px, 12vw, 160px) var(--gutter); }
+    .sec.dark { background: var(--black); color: var(--offwhite); --fg: var(--offwhite); --muted: rgba(255,255,255,0.56); --line: rgba(255,255,255,0.16); --line-strong: rgba(255,255,255,0.82); }
+    .sec.purple { background: var(--purple); color: var(--offwhite); --fg: var(--offwhite); --muted: rgba(255,255,255,0.7); --line: rgba(255,255,255,0.22); --line-strong: rgba(255,255,255,0.92); }
+    .wrap { max-width: 1280px; margin: 0 auto; }
+
+    .sec-tag {
+      display: flex; justify-content: space-between; align-items: center; gap: 16px;
+      font-size: 13px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--muted); padding-bottom: 20px; border-bottom: 1px solid var(--line);
+      margin-bottom: clamp(48px, 7vw, 96px);
+    }
+
+    /* ───────── Type ───────── */
+    .eyebrow { font-size: 14px; font-weight: 500; letter-spacing: .24em; text-transform: uppercase; color: var(--purple); margin: 0 0 24px; }
+    .dark .eyebrow, .purple .eyebrow { color: var(--cyan); }
+    .display { font-family: var(--xcond); font-weight: 700; font-size: clamp(88px, 17vw, 240px); line-height: .82; letter-spacing: -.02em; margin: 0; }
+    .headline { font-weight: 300; font-size: clamp(44px, 7vw, 96px); line-height: .95; letter-spacing: -.025em; margin: 0; text-wrap: balance; }
+    .headline em, .display em { font-style: italic; font-weight: 400; color: var(--purple); }
+    .dark .headline em { color: var(--purple-light); }
+    .purple .headline em { color: var(--cyan); }
+    .lead { font-weight: 300; font-size: clamp(22px, 2.4vw, 32px); line-height: 1.3; letter-spacing: -.01em; max-width: 34ch; margin: 0; }
+    .body { font-size: clamp(17px, 1.5vw, 20px); line-height: 1.5; color: var(--muted); margin: 0; max-width: 60ch; }
+    .kicker { font-size: 13px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+    .num { font-family: var(--xcond); font-weight: 700; line-height: .88; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+    strong { font-weight: 500; }
+
+    .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(40px, 8vw, 120px); align-items: end; }
+    .cols { display: grid; gap: 0; border-top: 1px solid var(--line-strong); }
+    .cols > * { padding: 32px 28px 8px 0; }
+    .cols-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .cols-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .cols-4 { grid-template-columns: repeat(4, minmax(0,1fr)); }
+    .cols > * + * { padding-left: 28px; border-left: 1px solid var(--line); }
+
+    .tag { display: inline-flex; align-items: center; height: 32px; padding: 0 14px; font-size: 12px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; border: 1px solid currentColor; border-radius: 999px; white-space: nowrap; }
+    .tag.bad { color: var(--bad); background: #FFF0ED; }
+    .tag.warn { color: var(--warn); background: #FFF7ED; }
+    .tag.solid { background: var(--purple); border-color: var(--purple); color: #fff; }
+
+    /* ───────── Top bar ───────── */
+    .topbar {
+      position: fixed; inset: 0 0 auto 0; z-index: 50;
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+      padding: 14px var(--gutter);
+      color: var(--offwhite);
+      background: rgba(0,0,0,0.72);
+      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      font-size: 13px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase;
+    }
+    .topbar .brand { display: flex; align-items: center; gap: 14px; }
+    .topbar .brand img { height: 26px; width: auto; }
+    .topbar .brand span { color: rgba(255,255,255,0.6); }
+    .progress { position: absolute; left: 0; bottom: -1px; height: 2px; width: 0; background: linear-gradient(90deg, var(--cyan), var(--purple)); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      height: 52px; padding: 0 28px; border-radius: 999px;
+      background: var(--purple); color: #fff; text-decoration: none;
+      font-family: var(--sans); font-size: 15px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase;
+      transition: transform 200ms ease, background 200ms ease;
+      border: 0; cursor: pointer;
+    }
+    .btn:hover { transform: translateY(-2px); background: #5a22a8; }
+    .btn.small { height: 38px; padding: 0 18px; font-size: 12px; }
+    .btn.light { background: var(--offwhite); color: var(--black); }
+    .btn.light:hover { background: #fff; }
+
+    /* ───────── Reveal animation ───────── */
+    [data-reveal] { opacity: 0; transform: translateY(28px); transition: opacity 800ms cubic-bezier(.2,.7,.2,1), transform 800ms cubic-bezier(.2,.7,.2,1); }
+    [data-reveal].in { opacity: 1; transform: none; }
+    [data-reveal="2"] { transition-delay: 100ms; } [data-reveal="3"] { transition-delay: 200ms; }
+    [data-reveal="4"] { transition-delay: 300ms; } [data-reveal="5"] { transition-delay: 400ms; }
+    @media (prefers-reduced-motion: reduce) { [data-reveal] { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+
+    /* ───────── 01 Hero ───────── */
+    .hero { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; justify-content: flex-end; padding-top: 140px; padding-bottom: 56px; overflow: hidden; }
+    .hero .glow { position: absolute; right: -20vw; top: -10vw; width: 70vw; height: 70vw; border-radius: 50%; background: radial-gradient(circle, rgba(104,41,192,0.55) 0%, rgba(104,41,192,0) 65%); pointer-events: none; }
+    .hero .line { width: min(420px, 50vw); height: 4px; background: linear-gradient(90deg, var(--cyan), var(--purple)); margin-bottom: 48px; }
+    .hero .display em { color: var(--purple-light); }
+    .hero-meta { margin-top: clamp(48px, 7vw, 96px); padding-top: 24px; border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+    .hero-meta .v { font-size: clamp(20px, 2vw, 26px); font-weight: 500; margin-top: 8px; color: var(--offwhite); }
+    .scroll-hint { margin-top: 40px; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 12px; }
+    .scroll-hint i { display: block; width: 1px; height: 40px; background: linear-gradient(var(--cyan), transparent); animation: drip 1.8s ease-in-out infinite; }
+    @keyframes drip { 0%,100% { transform: scaleY(.4); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } }
+
+    /* ───────── Mercado ───────── */
+    .stat-big { font-size: clamp(72px, 9vw, 140px); color: var(--purple); }
+    .dark .stat-big { color: var(--cyan); }
+    .stat-label { font-size: 14px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-top: 16px; }
+    .stat-foot { font-size: 17px; line-height: 1.45; margin-top: 12px; color: var(--muted); max-width: 30ch; }
+
+    /* ───────── Pilares ───────── */
+    .pillar-num { font-family: var(--xcond); font-weight: 700; font-size: 48px; color: var(--purple); line-height: 1; }
+    .pillar-title { font-weight: 500; font-size: clamp(22px, 2vw, 28px); letter-spacing: -.01em; margin: 24px 0 12px; }
+    .pillar-desc { font-size: 17px; line-height: 1.45; color: var(--muted); }
+
+    /* ───────── Funil ───────── */
+    .funnel { display: flex; flex-direction: column; align-items: center; }
+    .f-row { display: grid; grid-template-columns: minmax(0, 1fr) 140px; gap: 20px; align-items: center; width: 100%; }
+    .f-stage {
+      position: relative; height: 104px; margin: 0 auto;
+      width: var(--w); clip-path: polygon(0 0, 100% 0, calc(100% - var(--cut)) 100%, var(--cut) 100%);
+      background: #1a1a1a; color: #fff;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
+      transform: scaleX(.2); opacity: 0; transition: transform 900ms cubic-bezier(.2,.7,.2,1), opacity 600ms ease;
+    }
+    .f-stage.f-last { background: linear-gradient(180deg, var(--cyan), var(--purple)); }
+    .funnel.in .f-stage { transform: none; opacity: 1; }
+    .f-label { font-size: 14px; font-weight: 500; letter-spacing: .18em; color: rgba(255,255,255,0.78); text-transform: uppercase; text-align: center; padding: 0 8px; }
+    .f-num { font-family: var(--xcond); font-weight: 700; font-size: clamp(40px, 4.4vw, 56px); line-height: 1; }
+    .f-side { border-left: 1px solid var(--line); padding-left: 14px; }
+    .f-side b { display: block; font-family: var(--xcond); font-weight: 700; font-size: 26px; }
+    .f-side span { font-size: 12px; font-weight: 500; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
+    .f-drop { display: grid; grid-template-columns: minmax(0, 1fr) 140px; gap: 20px; width: 100%; }
+    .f-drop div { display: flex; flex-direction: column; align-items: center; padding: 6px 0; }
+    .f-drop i { width: 1px; height: 18px; background: var(--line-strong); }
+    .chip { font-size: 13px; font-weight: 500; letter-spacing: .1em; padding: 6px 12px; border: 1px solid var(--line-strong); background: #fff; border-radius: 2px; white-space: nowrap; text-transform: uppercase; }
+    .chip small { font-weight: 400; color: var(--muted); margin-left: 6px; letter-spacing: .06em; }
+    .f-foot { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--line); width: min(100%, 520px); text-align: center; font-size: 13px; font-weight: 500; letter-spacing: .16em; color: var(--muted); text-transform: uppercase; }
+    .f-foot b { color: var(--fg); font-size: 15px; }
+    .assume { display: grid; gap: 0; margin-top: 40px; border-top: 1px solid var(--line-strong); }
+    .assume div { display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 17px; }
+    .assume div span:last-child { font-weight: 500; text-align: right; }
+
+    /* ───────── Acumulado (barras) ───────── */
+    .bars { display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: clamp(8px, 2vw, 24px); align-items: end; height: 320px; margin-top: 48px; border-bottom: 1px solid var(--line-strong); }
+    .bar { position: relative; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; }
+    .bar i { display: block; width: 100%; height: 0; background: rgba(255,255,255,0.28); transition: height 1100ms cubic-bezier(.2,.7,.2,1); }
+    .bar:last-child i { background: linear-gradient(180deg, var(--cyan), var(--offwhite)); }
+    .bars.in .bar i { height: var(--h); }
+    .bar b { position: absolute; left: 0; right: 0; bottom: calc(var(--h) + 10px); text-align: center; font-family: var(--xcond); font-size: clamp(22px, 2.6vw, 34px); opacity: 0; transition: opacity 500ms ease 900ms; }
+    .bars.in .bar b { opacity: 1; }
+    .bars-x { display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: clamp(8px, 2vw, 24px); margin-top: 12px; }
+    .bars-x span { text-align: center; font-size: 12px; font-weight: 500; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
+
+    /* ───────── Gargalos ───────── */
+    .garg-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    .garg-num { font-family: var(--xcond); font-weight: 700; font-size: 52px; color: var(--purple); line-height: 1; }
+    .garg-title { font-weight: 500; font-size: clamp(21px, 1.9vw, 25px); line-height: 1.18; letter-spacing: -.01em; margin: 28px 0 20px; }
+    .garg-fix { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 16px; line-height: 1.45; }
+    .garg-fix b { display: block; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--purple); margin-bottom: 6px; font-weight: 500; }
+
+    /* ───────── Estratégias ───────── */
+    .strat { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 0; border-top: 1px solid var(--line-strong); }
+    .strat > div { padding: 32px 28px 36px 0; border-bottom: 1px solid var(--line); }
+    .strat > div:not(:nth-child(3n+1)) { padding-left: 28px; border-left: 1px solid var(--line); }
+    .strat h3 { font-weight: 500; font-size: clamp(21px, 1.8vw, 24px); margin: 16px 0 10px; letter-spacing: -.01em; }
+    .strat p { margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); }
+    .strat .ch { font-size: 12px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; }
+    .ch.meta { color: var(--purple); } .ch.google { color: #1a73e8; }
+
+    /* ───────── Criativos ───────── */
+    .cr-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 64px; }
+    .cr-card { aspect-ratio: 9 / 14; border-radius: 18px; position: relative; overflow: hidden; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; background: #111; border: 1px solid rgba(255,255,255,0.1); }
+    .cr-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(120% 80% at 20% 0%, rgba(104,41,192,0.6), transparent 60%); }
+    .cr-card:nth-child(2)::before { background: radial-gradient(120% 80% at 80% 10%, rgba(140,207,234,0.45), transparent 60%); }
+    .cr-card:nth-child(3)::before { background: radial-gradient(120% 90% at 50% 100%, rgba(104,41,192,0.7), transparent 60%); }
+    .cr-card:nth-child(4)::before { background: linear-gradient(160deg, rgba(140,207,234,0.35), rgba(104,41,192,0.5)); }
+    .cr-card > * { position: relative; }
+    .cr-fmt { font-size: 11px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,0.7); display: flex; justify-content: space-between; }
+    .cr-hook { font-family: var(--xcond); font-weight: 700; font-size: clamp(30px, 3.2vw, 46px); line-height: .92; text-transform: uppercase; color: #fff; }
+    .cr-desc { font-size: 15px; line-height: 1.4; color: rgba(255,255,255,0.72); }
+    .owner { display: grid; grid-template-columns: auto 1fr; gap: clamp(24px, 4vw, 56px); align-items: center; margin-top: 72px; padding: clamp(28px, 4vw, 48px); border: 1px solid rgba(255,255,255,0.18); border-radius: 24px; background: rgba(104,41,192,0.14); }
+    .owner .num { font-size: clamp(64px, 9vw, 128px); color: var(--cyan); }
+    .owner p { margin: 0; font-size: clamp(19px, 1.8vw, 24px); line-height: 1.4; color: rgba(255,255,255,0.86); }
+
+    /* ───────── Rastreamento ───────── */
+    .track { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 0; margin-top: 64px; }
+    .track > div { position: relative; padding: 28px 20px 0 0; border-top: 2px solid var(--line-strong); }
+    .track > div::before { content: ''; position: absolute; top: -8px; left: 0; width: 14px; height: 14px; border-radius: 50%; background: var(--purple); box-shadow: 0 0 0 4px var(--offwhite); }
+    .track h4 { margin: 0 0 8px; font-size: 19px; font-weight: 500; }
+    .track p { margin: 0; font-size: 15px; line-height: 1.45; color: var(--muted); }
+    .track .kicker { margin-bottom: 14px; display: block; }
+
+    /* ───────── Benchmarks table ───────── */
+    .bench { width: 100%; border-collapse: collapse; margin-top: 56px; }
+    .bench th, .bench td { text-align: left; padding: 20px 16px 20px 0; border-bottom: 1px solid var(--line); font-size: 18px; vertical-align: baseline; }
+    .bench th { font-size: 12px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--line-strong); }
+    .bench td:first-child { font-weight: 500; }
+    .bench td.r { font-family: var(--xcond); font-weight: 700; font-size: 30px; color: var(--cyan); white-space: nowrap; }
+    .bench td.m { color: var(--muted); font-size: 16px; }
+
+    /* ───────── KPIs ───────── */
+    .kpi .num { font-size: clamp(64px, 7vw, 104px); margin: 28px 0 10px; }
+    .kpi .u { font-size: 17px; color: var(--muted); margin-bottom: 24px; min-height: 2.9em; }
+    .kpi .bar2 { height: 3px; background: var(--line); overflow: hidden; }
+    .kpi .bar2 i { display: block; height: 100%; width: 0; background: var(--purple); transition: width 1200ms cubic-bezier(.2,.7,.2,1) 300ms; }
+    .kpi.in .bar2 i { width: var(--w); }
+
+    /* ───────── Planos ───────── */
+    .plans { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px; margin-top: 72px; align-items: stretch; }
+    .plan { position: relative; border-radius: 28px; padding: clamp(28px, 4vw, 48px); background: #fff; border: 1px solid var(--line); display: flex; flex-direction: column; }
+    .plan.rec { background: var(--black); color: var(--offwhite); border-color: var(--black); --muted: rgba(255,255,255,0.6); --line: rgba(255,255,255,0.16); }
+    .plan .pname { font-family: var(--xcond); font-weight: 700; font-size: clamp(56px, 6vw, 84px); line-height: .9; letter-spacing: -.01em; text-transform: uppercase; }
+    .plan .psub { font-size: 17px; color: var(--muted); margin-top: 12px; }
+    .plan .price { display: flex; align-items: baseline; gap: 8px; margin: 36px 0 6px; }
+    .plan .price .cur { font-size: 22px; font-weight: 500; }
+    .plan .price .num { font-size: clamp(72px, 8vw, 112px); color: var(--purple); }
+    .plan.rec .price .num { color: var(--cyan); }
+    .plan .price .per { font-size: 18px; color: var(--muted); }
+    .plan .extra { margin-top: 8px; padding: 14px 16px; border-radius: 14px; background: rgba(140,207,234,0.14); border: 1px solid rgba(140,207,234,0.4); font-size: 16px; line-height: 1.4; }
+    .plan .extra b { color: var(--cyan); }
+    .plan ul { list-style: none; padding: 0; margin: 32px 0 0; flex: 1; }
+    .plan li { position: relative; padding: 15px 0 15px 32px; border-top: 1px solid var(--line); font-size: 17px; line-height: 1.4; }
+    .plan li::before { content: ''; position: absolute; left: 2px; top: 21px; width: 14px; height: 8px; border-left: 2px solid var(--purple); border-bottom: 2px solid var(--purple); transform: rotate(-45deg); }
+    .plan.rec li::before { border-color: var(--cyan); }
+    .plan li.hl { font-weight: 500; }
+    .plan li.hl em { font-style: normal; display: inline-block; margin-left: 8px; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; background: var(--purple); color: #fff; vertical-align: 2px; }
+    .plan li.plus { color: var(--muted); font-style: italic; }
+    .plan .badge { position: absolute; top: 24px; right: 24px; }
+    .plan .pfoot { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 12px; font-size: 14px; color: var(--muted); letter-spacing: .04em; }
+    .plan .pfoot b { color: inherit; font-weight: 500; }
+    .plan.rec .pfoot b { color: var(--offwhite); }
+    .cond { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); margin-top: 48px; border-top: 1px solid var(--line-strong); }
+    .cond > div { padding: 24px 20px 0 0; }
+    .cond > div + div { padding-left: 20px; border-left: 1px solid var(--line); }
+    .cond .num { font-size: 52px; color: var(--purple); margin: 12px 0 6px; }
+    .cond p { margin: 0; font-size: 15px; color: var(--muted); line-height: 1.4; }
+
+    /* ───────── Cronograma ───────── */
+    .timeline { margin-top: 64px; border-left: 2px solid var(--line-strong); }
+    .tl { position: relative; display: grid; grid-template-columns: 200px minmax(0,1fr); gap: 32px; padding: 0 0 48px 40px; }
+    .tl::before { content: ''; position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: var(--black); box-shadow: 0 0 0 5px var(--offwhite); }
+    .tl.p::before { background: var(--purple); }
+    .tl .when { font-family: var(--xcond); font-weight: 700; font-size: 34px; line-height: 1; }
+    .tl .when small { display: block; font-family: var(--sans); font-weight: 500; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin-top: 8px; }
+    .tl h4 { margin: 0 0 8px; font-size: clamp(22px, 2vw, 26px); font-weight: 500; letter-spacing: -.01em; }
+    .tl p { margin: 0; font-size: 17px; line-height: 1.5; color: var(--muted); max-width: 62ch; }
+
+    /* ───────── Relatórios ───────── */
+    .rlist { border-top: 1px solid var(--line-strong); }
+    .rlist > div { display: grid; grid-template-columns: 56px minmax(0,1fr) auto; gap: 20px; align-items: baseline; padding: 22px 0; border-bottom: 1px solid var(--line); }
+    .rlist .n { font-family: var(--xcond); font-weight: 700; font-size: 26px; color: var(--purple); }
+    .rlist h4 { margin: 0; font-size: 21px; font-weight: 500; }
+    .rlist p { margin: 6px 0 0; font-size: 15px; color: var(--muted); }
+    .rlist .meta { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); text-align: right; }
+
+    /* ───────── CTA final ───────── */
+    .final { min-height: 90vh; display: flex; flex-direction: column; justify-content: space-between; }
+    .final .display { color: var(--offwhite); }
+    .final-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: clamp(32px, 5vw, 64px); align-items: end; margin-top: 80px; }
+    .final-grid .kicker { color: rgba(255,255,255,0.62); }
+    .final-grid p, .final-grid .v { margin: 14px 0 0; font-size: 20px; line-height: 1.45; color: var(--offwhite); }
+    footer { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 80px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+
+    /* ───────── Responsive ───────── */
+    @media (max-width: 1000px) {
+      .split { grid-template-columns: 1fr; align-items: start; }
+      .cols-4 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .cols-4 > :nth-child(3) { border-left: 0; padding-left: 0; }
+      .cols-4 > :nth-child(n+3) { border-top: 1px solid var(--line); margin-top: 8px; }
+      .strat { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .strat > div:not(:nth-child(3n+1)) { padding-left: 0; border-left: 0; }
+      .strat > div:nth-child(even) { padding-left: 24px; border-left: 1px solid var(--line); }
+      .cr-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .track { grid-template-columns: 1fr; gap: 0; border-left: 2px solid var(--line-strong); margin-left: 6px; }
+      .track > div { border-top: 0; padding: 0 0 32px 32px; }
+      .track > div::before { left: -8px; top: 4px; }
+      .plans { grid-template-columns: 1fr; }
+      .cond { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .cond > div:nth-child(3) { border-left: 0; padding-left: 0; }
+      .cond > div:nth-child(n+3) { border-top: 1px solid var(--line); margin-top: 24px; }
+      .final-grid { grid-template-columns: 1fr; align-items: start; }
+    }
+    @media (max-width: 640px) {
+      .topbar .brand span, .topbar .hide-sm { display: none; }
+      .hero-meta { grid-template-columns: 1fr; }
+      .cols-2, .cols-3, .cols-4, .strat { grid-template-columns: 1fr; }
+      .cols > *, .cols > * + *, .strat > div, .strat > div:nth-child(even) { padding: 28px 0 24px; border-left: 0; }
+      .cols > * + *, .cols-4 > :nth-child(n+3) { border-top: 1px solid var(--line); margin-top: 0; }
+      .f-row, .f-drop { grid-template-columns: minmax(0,1fr) 92px; gap: 12px; }
+      .f-stage { height: 88px; }
+      .f-label { font-size: 11px; letter-spacing: .12em; }
+      .f-side b { font-size: 20px; }
+      .chip { font-size: 11px; padding: 5px 8px; }
+      .chip small { display: none; }
+      .bars { height: 240px; }
+      .bench th:nth-child(3), .bench td.m { display: none; }
+      .bench td { font-size: 16px; }
+      .bench td.r { font-size: 24px; }
+      .owner { grid-template-columns: 1fr; }
+      .tl { grid-template-columns: 1fr; gap: 12px; padding-left: 28px; }
+      .rlist > div { grid-template-columns: 40px minmax(0,1fr); }
+      .rlist .meta { grid-column: 2; text-align: left; }
+      .cond { grid-template-columns: 1fr; }
+      .cond > div, .cond > div + div { padding: 20px 0 0; border-left: 0; }
+      .cond > div + div { border-top: 1px solid var(--line); margin-top: 20px; }
+      .plan .pfoot { flex-direction: column; }
+      .plan .badge { position: static; align-self: flex-start; margin-bottom: 20px; }
+      .f-stage.f-last { --w: 60% !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════ TOP BAR ═══════════════════ -->
+<header class="topbar">
+  <div class="brand">
+    <img src="assets/logo-porceli-white.png" alt="Porceli Company" />
+    <span>Proposta · Klink Fibra</span>
+  </div>
+  <a class="btn small" href="#planos">Ver planos</a>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main>
+
+<!-- ═══════════════════ 01 — CAPA ═══════════════════ -->
+<section class="sec dark hero" id="topo">
+  <div class="glow"></div>
+  <div class="wrap" style="width: 100%;">
+    <div class="line" data-reveal></div>
+    <div class="eyebrow" data-reveal="2">Proposta de crescimento · Klink Fibra</div>
+    <h1 class="display" data-reveal="3">Mais assinantes<br/>de <em>fibra.</em></h1>
+    <p class="lead" data-reveal="4" style="margin-top: 48px; color: rgba(255,255,255,0.8);">
+      Tráfego pago é a ferramenta. O que vamos medir é instalação feita, assinante ativo e receita recorrente da Klink.
+    </p>
+
+    <div class="hero-meta" data-reveal="5">
+      <div><div class="kicker">Preparada para</div><div class="v">Klink Fibra · Minas Gerais</div></div>
+      <div><div class="kicker">Por</div><div class="v">Porceli Company</div></div>
+      <div><div class="kicker">Data · validade</div><div class="v">Outubro 2026 · 30 dias</div></div>
+    </div>
+    <div class="scroll-hint"><i></i>Role para ver a proposta</div>
+  </div>
+</section>
+
+<!-- ═══════════════════ 02 — O MERCADO ═══════════════════ -->
+<section class="sec" id="mercado">
+  <div class="wrap">
+    <div class="sec-tag"><span>01 · O jogo do provedor regional</span><span class="hide-sm">Contexto</span></div>
+
+    <div class="split">
+      <div data-reveal>
+        <div class="eyebrow">Por que o provedor é diferente</div>
+        <h2 class="headline">Vender internet é vender <em>por rua</em>.</h2>
+      </div>
+      <div data-reveal="2">
+        <p class="lead">Um e-commerce vende para o Brasil inteiro. A Klink só pode vender onde a fibra passa. Cada real de mídia gasto fora da área de cobertura é desperdício.</p>
+        <p class="body" style="margin-top: 24px;">Por isso o tráfego de um provedor tem regras próprias: segmentação por bairro, venda que fecha no WhatsApp, decisão rápida por preço, velocidade e confiança no atendimento local, e um cliente que, depois de instalado, fica pagando todo mês.</p>
+      </div>
+    </div>
+
+    <div class="cols cols-3" style="margin-top: clamp(64px, 8vw, 112px);">
+      <div data-reveal>
+        <div class="num stat-big">+50%</div>
+        <div class="stat-label">dos acessos de banda larga fixa</div>
+        <p class="stat-foot">estão com provedores regionais, e não com as grandes operadoras (Anatel). O cliente já confia no provedor da cidade.</p>
+      </div>
+      <div data-reveal="2">
+        <div class="num stat-big">&lt; 5 min</div>
+        <div class="stat-label">para responder no WhatsApp</div>
+        <p class="stat-foot">No provedor, o anúncio não vende sozinho: ele abre a conversa. Quem responde primeiro costuma levar a instalação.</p>
+      </div>
+      <div data-reveal="3">
+        <div class="num stat-big">24+</div>
+        <div class="stat-label">meses de vida do assinante</div>
+        <p class="stat-foot">Com churn saudável, cada instalação vira anos de mensalidade. O custo de aquisição se paga rápido e o lucro se acumula.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ 03 — COMO PENSAMOS ═══════════════════ -->
+<section class="sec dark" id="metodo">
+  <div class="wrap">
+    <div class="sec-tag"><span>02 · Como pensamos</span><span class="hide-sm">Porceli Company</span></div>
+
+    <div class="split">
+      <div data-reveal>
+        <div class="eyebrow">Nosso jeito</div>
+        <h2 class="headline">Mídia é meio.<br/><em>Assinante</em> é o fim.</h2>
+      </div>
+      <div data-reveal="2">
+        <p class="lead" style="color: rgba(255,255,255,0.82);">Não operamos anúncio solto. Olhamos o caminho inteiro, do criativo que para o scroll até o técnico batendo na porta, e ajustamos onde o retorno é maior.</p>
+      </div>
+    </div>
+
+    <div class="cols cols-4" style="margin-top: clamp(64px, 8vw, 112px);">
+      <div data-reveal><div class="pillar-num">01</div><div class="pillar-title">Tráfego &amp; mídia</div><div class="pillar-desc">Meta Ads e Google Ads com segmentação pelos bairros e cidades onde a Klink tem fibra.</div></div>
+      <div data-reveal="2"><div class="pillar-num">02</div><div class="pillar-title">Criativos</div><div class="pillar-desc">Nós produzimos as peças: vídeos, carrosséis e estáticos pensados para quem decide trocar de internet.</div></div>
+      <div data-reveal="3"><div class="pillar-num">03</div><div class="pillar-title">Conversão</div><div class="pillar-desc">WhatsApp, landing page e consulta de cobertura sem atrito: o clique tem que virar conversa.</div></div>
+      <div data-reveal="4"><div class="pillar-num">04</div><div class="pillar-title">Dados</div><div class="pillar-desc">Rastreamento do anúncio até a instalação, para saber qual campanha traz assinante de verdade.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ 04 — FUNIL DO PROVEDOR ═══════════════════ -->
+<section class="sec" id="funil">
+  <div class="wrap">
+    <div class="sec-tag"><span>03 · O funil do provedor</span><span class="hide-sm">Simulação</span></div>
+
+    <div class="split" style="align-items: start;">
+      <div data-reveal>
+        <div class="eyebrow">Matemática da operação</div>
+        <h2 class="headline">Do anúncio ao <em>técnico</em> na porta.</h2>
+        <p class="body" style="margin-top: 32px;">Simulação de um mês com R$ 3.000 de investimento em mídia na Meta, usando faixas de referência de provedores regionais. No onboarding substituímos cada número pelos dados reais da Klink.</p>
+
+        <div class="assume">
+          <div><span>Investimento em mídia (exemplo)</span><span>R$ 3.000/mês</span></div>
+          <div><span>Ticket médio estimado</span><span>R$ 99,90</span></div>
+          <div><span>Custo de mídia por instalação</span><span>≈ R$ 56</span></div>
+          <div><span>Mensalidades para pagar a mídia</span><span>&lt; 1</span></div>
+        </div>
+      </div>
+
+      <div class="funnel" id="funnel" data-reveal="2">
+        <div class="f-row">
+          <div class="f-stage" style="--w: 100%; --cut: 6%;"><div class="f-label">Pessoas alcançadas na área</div><div class="f-num" data-count="250000">0</div></div>
+          <div class="f-side"><span>CPM</span><b>R$ 12</b></div>
+        </div>
+        <div class="f-drop"><div><i></i><span class="chip">Custo/conversa <b>R$ 8</b><small>ref. R$ 5–15</small></span></div><div></div></div>
+        <div class="f-row">
+          <div class="f-stage" style="--w: 86%; --cut: 7%;"><div class="f-label">Conversas no WhatsApp</div><div class="f-num" data-count="375">0</div></div>
+          <div class="f-side"><span>Mídia</span><b>R$ 3.000</b></div>
+        </div>
+        <div class="f-drop"><div><i></i><span class="chip">Dentro da cobertura <b>60%</b><small>meta 75%</small></span></div><div></div></div>
+        <div class="f-row">
+          <div class="f-stage" style="--w: 72%; --cut: 8%;"><div class="f-label">Com viabilidade</div><div class="f-num" data-count="225">0</div></div>
+          <div class="f-side"><span>Cobertura</span><b>OK</b></div>
+        </div>
+        <div class="f-drop"><div><i></i><span class="chip">Proposta enviada <b>80%</b></span></div><div></div></div>
+        <div class="f-row">
+          <div class="f-stage" style="--w: 58%; --cut: 9%;"><div class="f-label">Propostas</div><div class="f-num" data-count="180">0</div></div>
+          <div class="f-side"><span>Atendimento</span><b>&lt; 5 min</b></div>
+        </div>
+        <div class="f-drop"><div><i></i><span class="chip">Fechamento <b>30%</b><small>ref. 20–35%</small></span></div><div></div></div>
+        <div class="f-row">
+          <div class="f-stage f-last" style="--w: 42%; --cut: 0%;"><div class="f-label">Instalações</div><div class="f-num" data-count="54">0</div></div>
+          <div class="f-side"><span>Novos/mês</span><b>54</b></div>
+        </div>
+        <div class="f-foot">Receita recorrente nova · <b>≈ R$ 5,4 mil/mês</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ 05 — EFEITO ACUMULADO ═══════════════════ -->
+<section class="sec purple" id="acumulado">
+  <div class="wrap">
+    <div class="sec-tag"><span>04 · O efeito acumulado</span><span class="hide-sm">6 meses de contrato</span></div>
+
+    <div class="split">
+      <div data-reveal>
+        <div class="eyebrow">Assinante não é venda única</div>
+        <h2 class="headline">Cada mês <em>soma</em> ao anterior.</h2>
+      </div>
+      <div data-reveal="2">
+        <p class="lead">Quem instala em janeiro continua pagando em junho. Em 6 meses, a mesma operação constrói uma base de cerca de <strong>300 novos assinantes</strong>.</p>
+      </div>
+    </div>
+
+    <div class="bars" id="bars" data-reveal="3">
+      <div class="bar" style="--h: 17.5%;"><i></i><b>54</b></div>
+      <div class="bar" style="--h: 34.7%;"><i></i><b>107</b></div>
+      <div class="bar" style="--h: 51.5%;"><i></i><b>159</b></div>
+      <div class="bar" style="--h: 68%;"><i></i><b>210</b></div>
+      <div class="bar" style="--h: 84.1%;"><i></i><b>259</b></div>
+      <div class="bar" style="--h: 100%;"><i></i><b>308</b></div>
+    </div>
+    <div class="bars-x"><span>Mês 1</span><span>Mês 2</span><span>Mês 3</span><span>Mês 4</span><span>Mês 5</span><span>Mês 6</span></div>
+
+    <div class="cols cols-3" style="margin-top: 72px;">
+      <div data-reveal><div class="num stat-big" style="color: var(--offwhite);">≈ 308</div><div class="stat-label">assinantes novos ativos no mês 6</div></div>
+      <div data-reveal="2"><div class="num stat-big" style="color: var(--cyan);">R$ 30,8 mil</div><div class="stat-label">por mês em receita recorrente nova</div></div>
+      <div data-reveal="3"><div class="num stat-big" style="color: var(--offwhite);">1,75×</div><div class="stat-label">com +15% em 4 etapas do funil</div></div>
+    </div>
+    <p class="body" style="margin-top: 40px; font-size: 15px;">Projeção ilustrativa: 54 instalações/mês, churn de 2% ao mês e ticket de R$ 99,90. Não é garantia de resultado; é a conta que vamos perseguir e medir mês a mês.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════ 06 — GARGALOS ═══════════════════ -->
+<section class="sec" id="gargalos">
+  <div class="wrap">
+    <div class="sec-tag"><span>05 · Onde o provedor perde venda</span><span class="hide-sm">Diagnóstico</span></div>
+
+    <div data-reveal>
+      <div class="eyebrow">3 vazamentos clássicos</div>
+      <h2 class="headline" style="max-width: 18ch;">Cada vazamento é um <em>multiplicador</em> escondido.</h2>
+    </div>
+
+    <div class="cols cols-3" style="margin-top: clamp(56px, 7vw, 88px);">
+      <div data-reveal>
+        <div class="garg-head"><div class="garg-num">G1</div><span class="tag bad">Alto impacto</span></div>
+        <div class="garg-title">Conversa de quem está fora da cobertura</div>
+        <p class="body" style="font-size: 16px;">Anúncio aberto para a cidade inteira gera conversa de quem a fibra não alcança. O comercial perde tempo e o custo por instalação dispara.</p>
+        <div class="garg-fix"><b>Como resolvemos</b>Segmentação por raio e bairro com cobertura, criativos que citam o bairro e filtro de CEP antes do atendimento.</div>
+      </div>
+      <div data-reveal="2">
+        <div class="garg-head"><div class="garg-num">G2</div><span class="tag bad">Alto impacto</span></div>
+        <div class="garg-title">Demora na primeira resposta do WhatsApp</div>
+        <p class="body" style="font-size: 16px;">Quem pede preço de internet também está falando com o concorrente. Depois de alguns minutos sem resposta, a chance de fechar cai muito.</p>
+        <div class="garg-fix"><b>Como resolvemos</b>Mensagem inicial com perguntas de qualificação, roteiro de atendimento e acompanhamento do tempo de resposta.</div>
+      </div>
+      <div data-reveal="3">
+        <div class="garg-head"><div class="garg-num">G3</div><span class="tag warn">Médio impacto</span></div>
+        <div class="garg-title">Não saber qual anúncio virou instalação</div>
+        <p class="body" style="font-size: 16px;">Sem rastreamento, a otimização olha só para cliques e conversas. O algoritmo aprende a trazer curioso, e não assinante.</p>
+        <div class="garg-fix"><b>Como resolvemos</b>Rastreamento de ponta a ponta: pixel, API de Conversões e retorno das vendas fechadas para as plataformas.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ 07 — ESTRATÉGIAS ═══════════════════ -->
+<section class="sec" id="estrategias" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="sec-tag"><span>06 · Estratégias para a Klink</span><span class="hide-sm">Meta + Google</span></div>
+
+    <div class="split" style="margin-bottom: clamp(56px, 7vw, 88px);">
+      <div data-reveal>
+        <div class="eyebrow">O plano de jogo</div>
+        <h2 class="headline">Campanhas feitas para <em>provedor</em>.</h2>
+      </div>
+      <div data-reveal="2"><p class="lead">Nada de campanha genérica de "plano 500 mega". Cada frente fala com um momento de vida diferente de quem precisa de internet.</p></div>
+    </div>
+
+    <div class="strat">
+      <div data-reveal><span class="ch meta">Meta Ads</span><h3>Geofence de cobertura</h3><p>Campanhas por bairro e raio de cada caixa de atendimento, com orçamento puxado para as áreas com mais portas livres.</p></div>
+      <div data-reveal="2"><span class="ch meta">Meta Ads</span><h3>Quem cansou da internet atual</h3><p>Criativos para quem sofre com queda, lentidão e atendimento distante: a dor de quem está com a operadora grande.</p></div>
+      <div data-reveal="3"><span class="ch meta">Meta Ads</span><h3>Momentos de vida</h3><p>Mudança de casa, home office, estudante, gamer e família com streaming: cada público com sua promessa.</p></div>
+      <div data-reveal><span class="ch meta">Meta Ads</span><h3>Empresas e comércio</h3><p>Linha própria para comércio local, com foco em estabilidade, suporte rápido e planos empresariais.</p></div>
+      <div data-reveal="2"><span class="ch meta">Meta Ads</span><h3>Indicação e remarketing</h3><p>Reimpacto de quem conversou e não fechou, e campanhas para assinantes indicarem vizinhos.</p></div>
+      <div data-reveal="3"><span class="ch meta">Meta Ads</span><h3>Calendário comercial</h3><p>Volta às aulas, Black Friday, fim de ano e inauguração de novos bairros com ofertas de instalação.</p></div>
+      <div data-reveal><span class="ch google">Google Ads · Advantage</span><h3>Pesquisa local</h3><p>Aparecer para quem busca "internet fibra em [cidade]", "provedor de internet perto de mim" e "trocar de internet".</p></div>
+      <div data-reveal="2"><span class="ch google">Google Ads · Advantage</span><h3>Maps e Perfil da Empresa</h3><p>Presença no Google Maps e chamadas diretas para quem procura o provedor no celular.</p></div>
+      <div data-reveal="3"><span class="ch google">Google Ads · Advantage</span><h3>Defesa da marca</h3><p>Proteger buscas por "Klink" para o concorrente não comprar o seu nome na frente do seu cliente.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ 08 — CRIATIVOS ═══════════════════ -->
+<section class="sec dark" id="criativos">
+  <div class="wrap">
+    <div class="sec-tag"><span>07 · Criativos</span><span class="hide-sm">Incluso nos dois planos</span></div>
+
+    <div class="split">
+      <div data-reveal>
+        <div class="eyebrow">Ponto importante</div>
+        <h2 class="headline">Os criativos são <em>com a gente</em>.</h2>
+      </div>
+      <div data-reveal="2">
+        <p class="lead" style="color: rgba(255,255,255,0.85);">A Klink não precisa contratar designer, editor ou agência à parte. A Porceli cria, produz, testa e renova todas as peças das campanhas.</p>
+        <p class="body" style="margin-top: 24px;">O criativo é a principal alavanca de resultado na Meta: é ele que segmenta, para o scroll e qualifica antes da conversa. Por isso ele fica no mesmo time que olha os números.</p>
+      </div>
+    </div>
+
+    <div class="cr-grid">
+      <div class="cr-card" data-reveal><div class="cr-fmt"><span>Reels · 9:16</span><span>01</span></div><div class="cr-hook">Teste de<br/>velocidade<br/>ao vivo</div><div class="cr-desc">Prova na tela: download, upload e ping na casa de um cliente real.</div></div>
+      <div class="cr-card" data-reveal="2"><div class="cr-fmt"><span>Reels · 9:16</span><span>02</span></div><div class="cr-hook">Chegou<br/>no seu<br/>bairro</div><div class="cr-desc">Peças com o nome do bairro, rua e equipe local. Proximidade que operadora grande não tem.</div></div>
+      <div class="cr-card" data-reveal="3"><div class="cr-fmt"><span>Carrossel · 4:5</span><span>03</span></div><div class="cr-hook">Caiu de<br/>novo?<br/>Troque.</div><div class="cr-desc">A dor de quem perde a reunião, a aula ou o jogo por causa da internet.</div></div>
+      <div class="cr-card" data-reveal="4"><div class="cr-fmt"><span>Story · 9:16</span><span>04</span></div><div class="cr-hook">Cliente<br/>Klink<br/>conta</div><div class="cr-desc">Depoimentos de assinantes e bastidores da instalação: confiança antes da conversa.</div></div>
+    </div>
+
+    <div class="owner" data-reveal>
+      <div class="num">100%</div>
+      <p><strong style="color:#fff;">Roteiro, design, edição e copy feitos pela Porceli.</strong> Testes A/B contínuos, troca das peças quando o desempenho cai e aprovação da Klink antes de cada peça entrar no ar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ 09 — RASTREAMENTO ═══════════════════ -->
+<section class="sec" id="rastreamento">
+  <div class="wrap">
+    <div class="sec-tag"><span>08 · Rastreamento</span><span class="hide-sm">Incluso nos dois planos</span></div>
+
+    <div class="split">
+      <div data-reveal>
+        <div class="eyebrow">Do anúncio à instalação</div>
+        <h2 class="headline">Cada assinante com <em>origem</em>.</h2>
+      </div>
+      <div data-reveal="2"><p class="lead">Fazemos todo o rastreamento. A Klink vai saber de qual campanha, criativo e bairro veio cada instalação, e o algoritmo vai aprender a buscar mais gente igual.</p></div>
+    </div>
+
+    <div class="track">
+      <div data-reveal><span class="kicker">Etapa 1</span><h4>Acesso e auditoria</h4><p>Recebemos os acessos às contas de anúncio, Business Manager e páginas, e auditamos a estrutura atual.</p></div>
+      <div data-reveal="2"><span class="kicker">Etapa 2</span><h4>Pixel + API de Conversões</h4><p>Eventos da Meta configurados no site e no servidor, imunes a bloqueadores e às restrições do iOS.</p></div>
+      <div data-reveal="3"><span class="kicker">Etapa 3</span><h4>Conversas no WhatsApp</h4><p>Cada conversa marcada com a campanha de origem, para medir o custo real por atendimento.</p></div>
+      <div data-reveal="4"><span class="kicker">Etapa 4</span><h4>UTMs, GA4 e Google</h4><p>Padrão de UTMs, Google Analytics 4 e conversões do Google Ads conectadas.</p></div>
+      <div data-reveal="5"><span class="kicker">Etapa 5</span><h4>Venda fechada</h4><p>Instalações confirmadas voltam para as plataformas, com integração ao sistema do provedor (IXC, SGP, MK…) quando possível.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ 10 — BENCHMARKS ═══════════════════ -->
+<section class="sec dark" id="benchmarks">
+  <div class="wrap">
+    <div class="sec-tag"><span>09 · Benchmarks do setor</span><span class="hide-sm">Provedores regionais</span></div>
+
+    <div class="split">
+      <div data-reveal>
+        <div class="eyebrow">Onde a régua está</div>
+        <h2 class="headline">Os números que um provedor <em>saudável</em> busca.</h2>
+      </div>
+      <div data-reveal="2"><p class="lead" style="color: rgba(255,255,255,0.82);">Faixas de referência de mercado para provedores de internet no interior. No primeiro mês, medimos onde a Klink está em cada linha e definimos as metas juntos.</p></div>
+    </div>
+
+    <table class="bench" data-reveal="3">
+      <thead><tr><th>Indicador</th><th>Faixa de referência</th><th>O que significa</th></tr></thead>
+      <tbody>
+        <tr><td>CPM na Meta (interior de MG)</td><td class="r">R$ 8–15</td><td class="m">Custo para alcançar mil pessoas na área de cobertura</td></tr>
+        <tr><td>Custo por conversa no WhatsApp</td><td class="r">R$ 5–15</td><td class="m">Quanto custa cada pessoa que chama a Klink</td></tr>
+        <tr><td>Conversas dentro da cobertura</td><td class="r">60–80%</td><td class="m">Qualidade da segmentação geográfica</td></tr>
+        <tr><td>Conversa → instalação</td><td class="r">15–30%</td><td class="m">Eficiência do atendimento comercial</td></tr>
+        <tr><td>CPC no Google (busca local)</td><td class="r">R$ 1–4</td><td class="m">Custo do clique de quem já procura internet</td></tr>
+        <tr><td>Conversão da landing page</td><td class="r">8–15%</td><td class="m">Visitantes que viram conversa ou cadastro</td></tr>
+        <tr><td>Custo de mídia por instalação</td><td class="r">R$ 40–120</td><td class="m">Mídia investida dividida por instalações feitas</td></tr>
+        <tr><td>Churn mensal</td><td class="r">&lt; 2%</td><td class="m">Base que cancela por mês: abaixo disso o LTV dispara</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ═══════════════════ 11 — KPIs ═══════════════════ -->
+<section class="sec" id="kpis">
+  <div class="wrap">
+    <div class="sec-tag"><span>10 · KPIs</span><span class="hide-sm">Métricas de sucesso</span></div>
+
+    <div data-reveal>
+      <div class="eyebrow">O que vamos medir</div>
+      <h2 class="headline">Menos vaidade.<br/>Mais <em>instalação</em>.</h2>
+    </div>
+
+    <div class="cols cols-4" style="margin-top: clamp(56px, 7vw, 88px);">
+      <div class="kpi" data-reveal><div class="kicker">Volume</div><div class="num" data-count="54">0</div><div class="u">instalações por mês vindas da mídia</div><div class="bar2"><i style="--w: 88%;"></i></div></div>
+      <div class="kpi" data-reveal="2"><div class="kicker">Aquisição</div><div class="num" data-count="56" data-prefix="R$ ">0</div><div class="u">custo de mídia por instalação</div><div class="bar2"><i style="--w: 62%;"></i></div></div>
+      <div class="kpi" data-reveal="3"><div class="kicker">Atendimento</div><div class="num" data-count="8" data-prefix="R$ ">0</div><div class="u">custo por conversa no WhatsApp</div><div class="bar2"><i style="--w: 70%;"></i></div></div>
+      <div class="kpi" data-reveal="4"><div class="kicker">Qualidade</div><div class="num" data-count="75" data-suffix="%">0</div><div class="u">das conversas dentro da cobertura</div><div class="bar2"><i style="--w: 75%;"></i></div></div>
+    </div>
+    <p class="body" style="margin-top: 32px; font-size: 15px;">Metas iniciais com base na simulação. Revisadas depois dos primeiros 30 dias com os dados reais da Klink.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════ 12 — PLANOS ═══════════════════ -->
+<section class="sec" id="planos" style="background: #EAEAEA;">
+  <div class="wrap">
+    <div class="sec-tag"><span>11 · Planos e investimento</span><span class="hide-sm">Fidelidade de 6 meses</span></div>
+
+    <div class="split">
+      <div data-reveal>
+        <div class="eyebrow">Escolha o ponto de partida</div>
+        <h2 class="headline">Dois planos.<br/>Uma meta: <em>assinantes</em>.</h2>
+      </div>
+      <div data-reveal="2"><p class="lead">O Starter domina a Meta. O Advantage soma o Google para capturar quem já está procurando internet, com uma landing page feita para converter.</p></div>
+    </div>
+
+    <div class="plans">
+      <!-- STARTER -->
+      <div class="plan" data-reveal>
+        <div class="kicker">Plano</div>
+        <div class="pname">Starter</div>
+        <div class="psub">Tráfego pago na Meta (Facebook e Instagram)</div>
+        <div class="price"><span class="cur">R$</span><span class="num">2.500</span><span class="per">/mês</span></div>
+        <ul>
+          <li>Acesso, auditoria e organização das contas de anúncio</li>
+          <li>Gestão completa dos anúncios na Meta Ads</li>
+          <li class="hl">Criação dos criativos pela Porceli <em>Incluso</em></li>
+          <li class="hl">Rastreamento completo de ponta a ponta <em>Incluso</em></li>
+          <li>Otimização contínua de públicos, lances e orçamento</li>
+          <li>Segmentação por bairros e áreas com cobertura</li>
+          <li>Dashboard, report semanal e call mensal</li>
+        </ul>
+        <div class="pfoot"><span>Fidelidade <b>6 meses</b></span><span>Mídia paga direto à Meta</span></div>
+      </div>
+
+      <!-- ADVANTAGE -->
+      <div class="plan rec" data-reveal="2">
+        <span class="tag solid badge">Recomendado</span>
+        <div class="kicker">Plano</div>
+        <div class="pname">Advantage</div>
+        <div class="psub">Meta Ads + Google Ads + landing page</div>
+        <div class="price"><span class="cur">R$</span><span class="num">3.500</span><span class="per">/mês</span></div>
+        <div class="extra"><b>+ R$ 1.000</b> (valor único) para o desenvolvimento da landing page, necessária para as campanhas do Google.</div>
+        <ul>
+          <li class="plus">Tudo do plano Starter, mais:</li>
+          <li class="hl">Gestão completa do Google Ads <em>Novo</em></li>
+          <li>Pesquisa local, Google Maps e defesa da marca Klink</li>
+          <li class="hl">Landing page de alta conversão <em>Novo</em></li>
+          <li>Consulta de cobertura, planos e botão de WhatsApp na página</li>
+          <li>Rastreamento integrado Meta + Google + GA4</li>
+          <li>Leitura cruzada de canais para investir onde rende mais</li>
+        </ul>
+        <div class="pfoot"><span>1º mês <b>R$ 4.500</b> · depois <b>R$ 3.500</b></span><span>Fidelidade <b>6 meses</b></span></div>
+      </div>
+    </div>
+
+    <div class="cond">
+      <div data-reveal><div class="kicker">Fidelidade</div><div class="num">6 meses</div><p>Tempo para aprender, otimizar e escalar com consistência.</p></div>
+      <div data-reveal="2"><div class="kicker">Mídia</div><div class="num">À parte</div><p>O investimento em anúncios é pago pela Klink direto às plataformas.</p></div>
+      <div data-reveal="3"><div class="kicker">Landing page</div><div class="num">R$ 1.000</div><p>Valor único, no plano Advantage. A página fica com a Klink.</p></div>
+      <div data-reveal="4"><div class="kicker">Validade</div><div class="num">30 dias</div><p>Condições válidas a partir da data de envio desta proposta.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ 13 — CRONOGRAMA ═══════════════════ -->
+<section class="sec" id="cronograma">
+  <div class="wrap">
+    <div class="sec-tag"><span>12 · Cronograma</span><span class="hide-sm">Primeiros 90 dias</span></div>
+
+    <div data-reveal>
+      <div class="eyebrow">Do onboarding à escala</div>
+      <h2 class="headline">Campanhas no ar em <em>2 semanas</em>.</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="tl" data-reveal><div class="when">Semana 1<small>Onboarding</small></div><div><h4>Acessos, auditoria e mapa de cobertura</h4><p>Recebemos os acessos das contas, mapeamos bairros e cidades com fibra, planos, preços e o processo de atendimento no WhatsApp.</p></div></div>
+      <div class="tl" data-reveal><div class="when">Semana 2<small>Setup</small></div><div><h4>Rastreamento e primeiros criativos</h4><p>Pixel, API de Conversões, UTMs e conversões configurados. Primeira leva de criativos produzida e aprovada. No Advantage, a landing page entra em produção.</p></div></div>
+      <div class="tl p" data-reveal><div class="when">Semanas 3–6<small>Go-live</small></div><div><h4>Campanhas no ar e fase de aprendizado</h4><p>Testes de públicos, bairros, ofertas e criativos. Cortamos rápido o que não traz conversa dentro da cobertura.</p></div></div>
+      <div class="tl" data-reveal><div class="when">Semanas 7–12<small>Otimização</small></div><div><h4>Otimização contínua pela instalação</h4><p>Orçamento concentrado nas campanhas que geram instalação, nova leva de criativos e ajustes no roteiro de atendimento.</p></div></div>
+      <div class="tl p" data-reveal style="padding-bottom: 0;"><div class="when">Mês 4–6<small>Escala</small></div><div><h4>Escala e novos bairros</h4><p>Aumento de verba onde o custo por instalação está saudável e campanhas de lançamento para cada nova área de cobertura.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ 14 — ACOMPANHAMENTO ═══════════════════ -->
+<section class="sec" id="relatorios" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="sec-tag"><span>13 · Acompanhamento</span><span class="hide-sm">Transparência total</span></div>
+    <div class="split" style="align-items: start;">
+      <div data-reveal>
+        <div class="eyebrow">Visibilidade</div>
+        <h2 class="headline">Cada centavo <em>à vista</em>.</h2>
+        <p class="body" style="margin-top: 32px;">A Klink acompanha tudo em tempo real e conversa direto com quem opera as campanhas.</p>
+      </div>
+      <div class="rlist" data-reveal="2">
+        <div><span class="n">01</span><div><h4>Dashboard em tempo real</h4><p>Investimento, conversas, custo e instalações por campanha</p></div><span class="meta">Contínuo</span></div>
+        <div><span class="n">02</span><div><h4>Report semanal</h4><p>Resumo do que aconteceu e o que vamos fazer em seguida</p></div><span class="meta">Toda segunda</span></div>
+        <div><span class="n">03</span><div><h4>Call de estratégia</h4><p>Resultados, próximos testes e novos bairros</p></div><span class="meta">Mensal</span></div>
+        <div><span class="n">04</span><div><h4>WhatsApp direto com o time</h4><p>Canal aberto para aprovações e ajustes rápidos</p></div><span class="meta">Dias úteis</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ 15 — PRÓXIMOS PASSOS ═══════════════════ -->
+<section class="sec purple final" id="contato">
+  <div class="wrap" style="width: 100%;">
+    <div class="eyebrow" data-reveal>Pronto para começar</div>
+    <h2 class="display" data-reveal="2">Vamos<br/>crescer,<br/>Klink?</h2>
+
+    <div class="final-grid">
+      <div data-reveal="3">
+        <div class="kicker">Próximo passo</div>
+        <p>Aprovação da proposta e kickoff em <strong>até 5 dias úteis</strong>. Campanhas no ar em 2 semanas.</p>
+        <a class="btn light" id="cta" href="#" target="_blank" rel="noopener" style="margin-top: 28px;">Aprovar proposta no WhatsApp</a>
+      </div>
+      <div data-reveal="4">
+        <div class="kicker">Contato</div>
+        <div class="v">[Nome do responsável]<br/><span style="opacity:.75">[email@porcelicompany.com]</span></div>
+      </div>
+      <div data-reveal="5">
+        <div class="kicker">Validade</div>
+        <div class="num" style="font-size: 64px; margin-top: 14px;">30 dias</div>
+        <div class="v" style="font-size: 16px; opacity: .75; margin-top: 8px;">a partir da data de envio</div>
+      </div>
+    </div>
+
+    <footer>
+      <span>Porceli Company · Performance agency</span>
+      <span>porcelicompany.com</span>
+    </footer>
+  </div>
+</section>
+
+</main>
+
+<script>
+  // WhatsApp da Porceli para o botão de aprovação (somente números, com DDI e DDD)
+  const PORCELI_WHATSAPP = '5500000000000';
+  const CTA_MESSAGE = 'Olá! Sou da Klink Fibra e quero avançar com a proposta de tráfego pago.';
+  document.getElementById('cta').href =
+    'https://wa.me/' + PORCELI_WHATSAPP + '?text=' + encodeURIComponent(CTA_MESSAGE);
+
+  // Barra de progresso de leitura
+  const progress = document.getElementById('progress');
+  const onScroll = () => {
+    const h = document.documentElement;
+    const p = h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight);
+    progress.style.width = (p * 100).toFixed(2) + '%';
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Contadores
+  const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+  function countUp(el) {
+    const target = parseFloat(el.dataset.count);
+    const prefix = el.dataset.prefix || '';
+    const suffix = el.dataset.suffix || '';
+    const start = performance.now();
+    const duration = 1400;
+    const frame = (now) => {
+      const t = Math.min(1, (now - start) / duration);
+      el.textContent = prefix + Math.round(target * easeOut(t)).toLocaleString('pt-BR') + suffix;
+      if (t < 1) requestAnimationFrame(frame);
+    };
+    requestAnimationFrame(frame);
+  }
+
+  // Revelar ao rolar
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const reveal = (el) => {
+    el.classList.add('in');
+    el.querySelectorAll('[data-count]').forEach((c) => (reduce ? (c.textContent = (c.dataset.prefix || '') + Number(c.dataset.count).toLocaleString('pt-BR') + (c.dataset.suffix || '')) : countUp(c)));
+  };
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { reveal(e.target); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.18, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('[data-reveal]').forEach((el) => io.observe(el));
+  } else {
+    document.querySelectorAll('[data-reveal]').forEach(reveal);
+  }
+</script>
+</body>
+</html>
