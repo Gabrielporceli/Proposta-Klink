@@ -8,7 +8,7 @@
   <title>Proposta Klink Fibra · Porceli Company</title>
   <meta name="description" content="Proposta de tráfego pago da Porceli Company para a Klink Fibra." />
   <meta property="og:title" content="Proposta de Crescimento · Klink Fibra" />
-  <meta property="og:description" content="Meta: ≈ 300 novos assinantes em 6 meses com Meta Ads, Google Ads, criativos e rastreamento." />
+  <meta property="og:description" content="Meta: 300 a 420 novos assinantes em 6 meses com Meta Ads, Google Ads, criativos e rastreamento." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:site_name" content="Porceli Company" />
@@ -103,7 +103,10 @@
     .hero-meta div div { margin-top: 6px; font-size: 17px; }
 
     /* ── Funil ── */
-    .funnel { margin-top: clamp(48px, 6vw, 80px); border-top: 1px solid var(--line-strong); }
+    .funnel { margin-top: 16px; border-top: 1px solid var(--line-strong); }
+    .f-head { display: flex; justify-content: space-between; gap: 16px; margin-top: clamp(48px, 6vw, 80px); }
+    .f-head .cap:first-child { color: var(--fg); }
+    .f-head.google .cap:first-child { color: var(--accent-2); }
     .f { display: grid; grid-template-columns: minmax(140px, 1fr) minmax(0, 2fr) 120px; gap: 24px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--line); }
     .f .n { font-size: clamp(28px, 3vw, 40px); font-weight: 500; letter-spacing: -.02em; text-align: right; font-variant-numeric: tabular-nums; }
     .f .t { font-size: 16px; }
@@ -117,12 +120,18 @@
     .assume div div { font-size: 22px; font-weight: 500; margin-top: 6px; }
 
     /* ── Barras acumulado ── */
-    .bars { display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: clamp(10px, 2.4vw, 32px); align-items: end; height: 280px; margin-top: clamp(48px, 6vw, 80px); border-bottom: 1px solid var(--line-strong); }
-    .bar { height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: stretch; }
-    .bar b { font-size: clamp(16px, 2vw, 24px); font-weight: 500; text-align: left; margin-bottom: 10px; opacity: 0; transition: opacity 600ms ease 800ms; font-variant-numeric: tabular-nums; }
-    .bar i { display: block; height: 0; background: var(--dim); transition: height 1100ms cubic-bezier(.2,.7,.2,1); }
-    .bar:last-child i { background: var(--accent); }
-    .bar:last-child b { color: var(--accent-2); }
+    .legend { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; margin-top: clamp(48px, 6vw, 80px); font-size: 15px; }
+    .legend .cap { margin-left: auto; }
+    .sw { display: inline-block; width: 12px; height: 12px; margin-right: 10px; vertical-align: -1px; }
+    .sw.s, .bar.s i { background: var(--dim); }
+    .sw.a, .bar.a i { background: var(--accent); }
+    .bars { display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: clamp(10px, 2.4vw, 32px); height: 320px; padding-top: 36px; margin-top: 16px; border-bottom: 1px solid var(--line-strong); }
+    .grp { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; height: 100%; }
+    .bar { position: relative; height: 100%; }
+    .bar i { position: absolute; left: 0; right: 0; bottom: 0; height: 0; transition: height 1100ms cubic-bezier(.2,.7,.2,1); }
+    .bar b { position: absolute; left: 0; right: 0; bottom: calc(var(--h) + 8px); text-align: center; font-size: clamp(13px, 1.5vw, 20px); font-weight: 500; opacity: 0; transition: opacity 600ms ease 800ms; font-variant-numeric: tabular-nums; }
+    .bar.s b { color: var(--muted); }
+    .bar.a b { color: var(--fg); }
     .bars.in .bar i { height: var(--h); }
     .bars.in .bar b { opacity: 1; }
     .bars-x { display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: clamp(10px, 2.4vw, 32px); margin-top: 12px; }
@@ -204,7 +213,11 @@
       .hero-meta { grid-template-columns: 1fr; }
       .f { grid-template-columns: minmax(0,1fr) 88px; gap: 12px 16px; }
       .f .track { grid-column: 1 / -1; grid-row: 2; }
-      .bars { height: 200px; }
+      .bars { height: 240px; gap: 8px; }
+      .grp { gap: 2px; }
+      .grp:not(:last-child) .bar b { display: none; }
+      .bar b { font-size: 12px; }
+      .legend .cap { margin-left: 0; }
       .bars-x .cap { font-size: 11px; }
       th:nth-child(3), td.m { display: none; }
       td.v { font-size: 18px; }
@@ -227,9 +240,9 @@
 
     <div class="hero-body">
       <span class="cap">Proposta de crescimento para a Klink Fibra</span>
-      <h1>Meta: ≈ 300 novos assinantes de <em>fibra</em> em 6 meses.</h1>
+      <h1>Meta: 300 a 420 novos assinantes de <em>fibra</em> em 6 meses.</h1>
       <p class="intro">Tráfego pago é a ferramenta. O que vamos medir é instalação feita, assinante ativo e receita recorrente.</p>
-      <p class="note" style="margin-top: 16px;">Projeção com R$ 3.000/mês de mídia na Meta. Premissas na seção 03.</p>
+      <p class="note" style="margin-top: 16px;">Projeção: ≈ 300 no Starter e ≈ 420 no Advantage, com as verbas sugeridas. Premissas na seção 03.</p>
 
       <div class="hero-meta">
         <div><span class="cap">Preparada para</span><div>Klink Fibra · Minas Gerais</div></div>
@@ -246,7 +259,7 @@
     <div class="label"><span>00</span><span>Resumo em 30 segundos</span></div>
     <div class="grid g4" style="margin-top: 0;">
       <div class="cell" data-r><span class="cap">O que fazemos</span><h3 style="margin-top: 12px;">Tráfego, criativos e rastreamento</h3><p class="text">Anúncios na Meta (e no Google, no Advantage), criativos dos anúncios e rastreamento de cada instalação.</p></div>
-      <div class="cell" data-r="2"><span class="cap">Meta em 6 meses</span><h3 style="margin-top: 12px;">≈ 300 assinantes novos</h3><p class="text">≈ R$ 30,8 mil por mês em receita recorrente nova no 6º mês. É uma projeção, não uma garantia.</p></div>
+      <div class="cell" data-r="2"><span class="cap">Meta em 6 meses</span><h3 style="margin-top: 12px;">300 a 420 assinantes novos</h3><p class="text">≈ R$ 30,8 mil (Starter) a R$ 42,2 mil (Advantage) por mês em receita recorrente nova no 6º mês. É uma projeção, não uma garantia.</p></div>
       <div class="cell" data-r="3"><span class="cap">Investimento</span><h3 style="margin-top: 12px;">A partir de R$ 2.500/mês</h3><p class="text">Starter R$ 2.500 ou Advantage R$ 3.500, mais a verba de mídia paga direto às plataformas.</p></div>
       <div class="cell" data-r="4"><span class="cap">Prazo</span><h3 style="margin-top: 12px;">No ar em 2 semanas</h3><p class="text">Fidelidade de 6 meses. <a href="#planos">Ver planos e valores ↓</a></p></div>
     </div>
@@ -290,8 +303,9 @@
   <div class="wrap">
     <div class="label" data-r><span>03</span><span>O funil do provedor · simulação</span></div>
     <h2 data-r="2">Do anúncio ao <em>técnico</em> na porta.</h2>
-    <p class="text" data-r="3" style="margin-top: 28px;">Um mês com R$ 3.000 de mídia na Meta, usando faixas de referência de provedores regionais. No onboarding trocamos cada número pelos dados reais da Klink.</p>
+    <p class="text" data-r="3" style="margin-top: 28px;">Um mês de operação com as verbas sugeridas, usando faixas de referência de provedores regionais. No onboarding trocamos cada número pelos dados reais da Klink.</p>
 
+    <div class="f-head" data-r><span class="cap">Meta · Starter e Advantage</span><span class="cap">R$ 3.000 de mídia</span></div>
     <div class="funnel" data-r>
       <div class="f"><div class="t">Pessoas alcançadas<small>CPM de R$ 12</small></div><div class="track"><i style="--w: 100%;"></i></div><div class="n" data-count="250000">0</div></div>
       <div class="f"><div class="t">Conversas no WhatsApp<small>R$ 8 por conversa</small></div><div class="track"><i style="--w: 82%;"></i></div><div class="n" data-count="375">0</div></div>
@@ -300,11 +314,20 @@
       <div class="f"><div class="t">Instalações<small>30% de fechamento</small></div><div class="track"><i style="--w: 32%;"></i></div><div class="n" data-count="54">0</div></div>
     </div>
 
+    <div class="f-head google" data-r><span class="cap">Google · só no Advantage</span><span class="cap">R$ 1.500 de mídia</span></div>
+    <div class="funnel" data-r>
+      <div class="f"><div class="t">Cliques de quem busca internet<small>CPC de R$ 2</small></div><div class="track"><i style="--w: 100%;"></i></div><div class="n" data-count="750">0</div></div>
+      <div class="f"><div class="t">Conversas pela landing page<small>12% de conversão</small></div><div class="track"><i style="--w: 62%;"></i></div><div class="n" data-count="90">0</div></div>
+      <div class="f"><div class="t">Dentro da cobertura<small>80%: a busca já vem com a cidade</small></div><div class="track"><i style="--w: 50%;"></i></div><div class="n" data-count="72">0</div></div>
+      <div class="f"><div class="t">Propostas enviadas<small>80% com viabilidade</small></div><div class="track"><i style="--w: 40%;"></i></div><div class="n" data-count="58">0</div></div>
+      <div class="f"><div class="t">Instalações<small>35%: quem busca já quer contratar</small></div><div class="track"><i style="--w: 22%;"></i></div><div class="n" data-count="20">0</div></div>
+    </div>
+
     <div class="assume" data-r>
-      <div><span class="cap">Mídia (exemplo)</span><div>R$ 3.000/mês</div></div>
       <div><span class="cap">Ticket médio estimado</span><div>R$ 99,90</div></div>
-      <div><span class="cap">Mídia por instalação</span><div>≈ R$ 56</div></div>
-      <div><span class="cap">Receita nova</span><div>≈ R$ 5,4 mil/mês</div></div>
+      <div><span class="cap">Mídia por instalação</span><div>≈ R$ 56 Meta · R$ 75 Google</div></div>
+      <div><span class="cap">Instalações por mês</span><div>54 Starter · 74 Advantage</div></div>
+      <div><span class="cap">Receita nova por mês</span><div>≈ R$ 5,4 mil · R$ 7,4 mil</div></div>
     </div>
   </div>
 </section>
@@ -314,24 +337,29 @@
   <div class="wrap">
     <div class="label" data-r><span>04</span><span>O efeito acumulado</span></div>
     <h2 data-r="2">Cada mês <em>soma</em> ao anterior.</h2>
-    <p class="intro" data-r="3">Quem instala no primeiro mês continua pagando no sexto. Em 6 meses, a mesma operação constrói uma base de cerca de 300 novos assinantes.</p>
+    <p class="intro" data-r="3">Quem instala no primeiro mês continua pagando no sexto. Em 6 meses, o Starter constrói uma base de cerca de 300 novos assinantes; o Advantage, com o Google somando quem já está procurando internet, chega perto de 420.</p>
 
+    <div class="legend" data-r>
+      <span><i class="sw s"></i>Starter · só Meta</span>
+      <span><i class="sw a"></i>Advantage · Meta + Google</span>
+      <span class="cap">Assinantes novos ativos</span>
+    </div>
     <div class="bars" data-r>
-      <div class="bar" style="--h: 17.5%;"><b>54</b><i></i></div>
-      <div class="bar" style="--h: 34.7%;"><b>107</b><i></i></div>
-      <div class="bar" style="--h: 51.5%;"><b>159</b><i></i></div>
-      <div class="bar" style="--h: 68%;"><b>210</b><i></i></div>
-      <div class="bar" style="--h: 84.1%;"><b>259</b><i></i></div>
-      <div class="bar" style="--h: 100%;"><b>308</b><i></i></div>
+      <div class="grp"><div class="bar s" style="--h: 12.8%;"><b>54</b><i></i></div><div class="bar a" style="--h: 17.5%;"><b>74</b><i></i></div></div>
+      <div class="grp"><div class="bar s" style="--h: 25.4%;"><b>107</b><i></i></div><div class="bar a" style="--h: 34.8%;"><b>147</b><i></i></div></div>
+      <div class="grp"><div class="bar s" style="--h: 37.7%;"><b>159</b><i></i></div><div class="bar a" style="--h: 51.7%;"><b>218</b><i></i></div></div>
+      <div class="grp"><div class="bar s" style="--h: 49.8%;"><b>210</b><i></i></div><div class="bar a" style="--h: 68%;"><b>287</b><i></i></div></div>
+      <div class="grp"><div class="bar s" style="--h: 61.4%;"><b>259</b><i></i></div><div class="bar a" style="--h: 84.1%;"><b>355</b><i></i></div></div>
+      <div class="grp"><div class="bar s" style="--h: 73%;"><b>308</b><i></i></div><div class="bar a" style="--h: 100%;"><b>422</b><i></i></div></div>
     </div>
     <div class="bars-x"><span class="cap">Mês 1</span><span class="cap">Mês 2</span><span class="cap">Mês 3</span><span class="cap">Mês 4</span><span class="cap">Mês 5</span><span class="cap">Mês 6</span></div>
 
     <div class="grid g3">
-      <div class="cell" data-r><div class="big">≈ 308</div><p class="text">assinantes novos ativos no 6º mês</p></div>
-      <div class="cell" data-r="2"><div class="big" style="color: var(--accent-2);">R$ 30,8<small>mil</small></div><p class="text">por mês em receita recorrente nova</p></div>
-      <div class="cell" data-r="3"><div class="big">1,75×</div><p class="text">de resultado com +15% em 4 etapas do funil</p></div>
+      <div class="cell" data-r><span class="cap">Starter · 6º mês</span><div class="big" style="margin-top: 14px;">≈ 308</div><p class="text">assinantes novos ativos, ou ≈ R$ 30,8 mil por mês em receita recorrente nova.</p></div>
+      <div class="cell" data-r="2"><span class="cap">Advantage · 6º mês</span><div class="big" style="margin-top: 14px; color: var(--accent-2);">≈ 422</div><p class="text">assinantes novos ativos, ou ≈ R$ 42,2 mil por mês em receita recorrente nova.</p></div>
+      <div class="cell" data-r="3"><span class="cap">O que o Google acrescenta</span><div class="big" style="margin-top: 14px;">+ 114</div><p class="text">assinantes e + R$ 11,4 mil por mês no 6º mês, com R$ 1.000 a mais de serviço e R$ 1.500 de mídia no Google.</p></div>
     </div>
-    <p class="note">Projeção ilustrativa: 54 instalações por mês, churn de 2% ao mês e ticket de R$ 99,90. Não é garantia de resultado; é a conta que vamos perseguir e medir mês a mês.</p>
+    <p class="note">Projeção ilustrativa: Starter com 54 instalações por mês (Meta) e Advantage com 74 (54 Meta + 20 Google), churn de 2% ao mês e ticket de R$ 99,90. Não é garantia de resultado; é a conta que vamos perseguir e medir mês a mês.</p>
   </div>
 </section>
 
@@ -456,8 +484,8 @@
         <p class="text">Um assinante paga cerca de R$ 2.400 em 24 meses. A mídia para trazê-lo custa cerca de R$ 56.</p>
       </div>
       <div class="cell" data-r="2">
-        <div class="vs"><span class="big">R$ 30,8<small>mil</small></span><span class="cap">contra</span><span class="big dim">R$ 3.500</span></div>
-        <p class="text">A meta do 6º mês é R$ 30,8 mil por mês em receita nova. O Advantage custa R$ 3.500 por mês.</p>
+        <div class="vs"><span class="big">R$ 42,2<small>mil</small></span><span class="cap">contra</span><span class="big dim">R$ 3.500</span></div>
+        <p class="text">A meta do 6º mês no Advantage é R$ 42,2 mil por mês em receita nova. O plano custa R$ 3.500 por mês.</p>
       </div>
       <div class="cell" data-r="3">
         <div class="vs"><span class="big">+ R$ 12<small>mil/mês</small></span></div>
